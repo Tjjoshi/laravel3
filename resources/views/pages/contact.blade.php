@@ -2,9 +2,8 @@
 @extends ('layouts.default')
 @section ('content')
 
-
-    <h1>contacts</h1>
-    <p class="lead">Please use this form to contact the site owner</p>
+<div class="card">
+    <div class="card-title"><h1>contacts</h1></div>
 
     <form action="/contact" method="post">
         {{ csrf_field() }}
@@ -18,5 +17,5 @@
         </div>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </form>
-
+</div>
 @endsection
