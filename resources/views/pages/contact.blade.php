@@ -2,9 +2,9 @@
 @section ('content')
     <div class="card mt-3 pl-2 pr-2">
         <div class="card-title"><h1>contacts</h1>
-            <p class="lead"> Use this form to contact the site owner</p></div>
+            </div>
         <div class="card-body">
-            <form action="/contact" method="post">
+            <form action="{{route('contact.store')}}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="name">name</label>
