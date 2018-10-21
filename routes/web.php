@@ -12,16 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('pages.index');
-});
+    return view('pages.home');
+})->name('home');
 Route::get('/about', function () {
     return view('pages.about');
-});
+})->name('about');
 Route::get('/contact', function () {
     return view('pages.contact');
-});
-Route::post('/contact', function () {
-    $data=request()->all();
-    echo "email :". $data['email'] . "<br>";
-    echo "message :". $data['body'];
-});
+})->name('contact');
